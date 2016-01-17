@@ -12,3 +12,19 @@ extension NSObject {
     }
 
 }
+
+// EXAMPLE:
+// class Foo: NSObject { }
+// class Bar: Foo { }
+//
+// let foo = Foo()
+// let bar = Bar()
+// let type = Bar.self
+//
+// if foo.isOfClassType(type) {
+//     print("This is true!")
+// }
+//
+// if bar.isOfClassType(type) {
+//     print("This is also true!")
+// }
