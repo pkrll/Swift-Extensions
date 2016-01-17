@@ -16,3 +16,6 @@ func <?<T: LocaleSensitive>(left: T, right: String) -> Bool {
 func ?><T: LocaleSensitive>(left: T, right: String) -> Bool {
     return left.compare(right, withLocale: NSLocale(localeIdentifier: "se"), orderBy: .OrderedDescending)
 }
+
+//  USAGE:
+//  array.sort { $0.0 <? $0.1 }
